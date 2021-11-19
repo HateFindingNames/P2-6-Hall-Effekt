@@ -1,0 +1,47 @@
+\documentclass[paper=a4,11pt,titlepage,twoside=true,headings=normal,numbers=noenddot,captions=tableabove,listof=totoc,index=totoc,bibliography=totoc,german]{scrreprt}
+\input{pre-packages}
+\input{pre-newcommand}
+\input{pre-Seitenlayout}
+\input{pre-Kopf-Fusszeile-2010}
+\input{pre-Kopf-Fusszeilen-text-Bericht}
+\newcommand{\titelLV}{Physikalisches Praktikum 2}
+%---------------------------- VARIABLEN festlegen ------------------
+%----------- Pro Versuch zu ändernde Angaben -----------------------
+% \newcommand{\versuch}{3} % Versuchsnummer einfügen
+\newcommand{\untertitelb}{Hall-Effekt} % Titel des Versuchs einfügen
+\newcommand{\datumLV}{23.10.2020} % Datum einfügen
+\newcommand{\deadline}{14.11.2020} % Datum einfügen
+%----------- TITEL
+\newcommand{\untertitela}{Versuch P2-6}
+% -------- Student 1
+\newcommand{\nameA}{Herr Cihan Ünlü}
+% --------- Student 2
+\newcommand{\nameB}{Herr Dennis Hunter}
+% --------- Student 3, falls vorhanden
+\newcommand{\nameC}{Herr Student drei}
+%::::::::::::::::::::::::::::::::::
+%\input{chapters/glossar}
+\addbibresource{quellen.bib}
+\begin{document}
+%-----------------------------------------------------------------
+\input{chapters/1_deck}
+%-----------------------------------------------------
+\tableofcontents
+\newpage
+%--------------------
+\input{chapters/2_einleitung}
+\input{chapters/3_aufbau}
+\input{chapters/4_durchführung}
+\input{chapters/5_auswertung}
+\input{chapters/6_fazit}
+%-------------------
+\newpage
+\listoffigures 
+\listoftables
+\input{chapters/8_glossar}
+\appendix
+\input{chapters/7_anhang}
+\printbibliography%
+%\bibliographystyle{plaindin}
+%==========================================
+\end{document}
